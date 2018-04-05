@@ -6,7 +6,6 @@ class FormOne extends React.Component {
     super(props);
     this.state = {
         user: {
-        name: null,
         email: null,
         password: null,
       }
@@ -27,13 +26,15 @@ class FormOne extends React.Component {
 
   render () {
     return (
-      <div>
-        <label>Name</label> 
-        <input type="text"
-               id="name"
-               onChange={this.handleChange.bind(this, 'name')} />
+      <div className="formOne">
+        <h1>Login</h1>
 
-        <label>Email</label>
+        <div> 
+          <button id="formOne_guest_button" onClick={this.save}>CHECKOUT AS GUEST</button>
+        </div>
+
+        <div>
+        <label>Username/Email</label>
         <input type="email"
                id="email"
                onChange={this.handleChange.bind(this, 'email')} />
@@ -43,11 +44,12 @@ class FormOne extends React.Component {
                id="password"
                onChange={this.handleChange.bind(this, 'password')} />
 
-        <button onClick={this.save}>Save and Continue</button>
+        <button onClick={this.save}>SIGN IN</button>
+        </div>
       </div>
     );
   }
 }
 
 
-export default FormOne
+export default FormOne;

@@ -1,0 +1,40 @@
+body {
+  background-color: #f4f5f7;
+}
+
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 1px;
+  border-color: lightgrey;
+  border-width: 1px;
+}
+
+.forms {
+  margin: 15%;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+#formOne_guest_button {
+  float: right;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+
+#formThree_order{
+  float: right;
+  margin-right: 20%;
+  margin-top: 10px;
+}
+
+.orderInfo {
+  margin-left: 20px;
+}
+
+#backToHomePage{
+  margin: 50px;
+}
