@@ -32,6 +32,7 @@ class App extends React.Component {
       }
     };
     this.saveAndContinue = this.saveAndContinue.bind(this);
+    this.goBack = this.goBack.bind(this);
   }
 
   saveAndContinue(input) {
@@ -52,13 +53,17 @@ class App extends React.Component {
     })
   }
 
+  goBack() {
+    this.setState({currentPageIndex: this.state.currentPageIndex -1});
+  }
+
 
   render() {
     var currentForm = () => {
       var CurrentPage = this.state.pages[this.state.currentPageIndex];
-        return <CurrentPage user={this.state.user} saveAndContinue={this.saveAndContinue} />
+        return <CurrentPage user={this.state.user} saveAndContinue={this.saveAndContinue} goBack={this.goBack} />
     }
-    
+
     return (
       <div>
         <h1>Checkout</h1>

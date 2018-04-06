@@ -71,6 +71,7 @@ class FormTwo extends React.Component {
                onChange={this.handleChange.bind(this, 'phoneNumber')} />
 
         <button onClick={this.save}>Save and Continue</button>
+        <button onClick={this.props.goBack}>Go Back</button>
       </div>
     );
   }

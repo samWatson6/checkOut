@@ -22,6 +22,7 @@ class ConfirmationPage extends React.Component {
         <h1>Confirmation Page </h1>
         <div> 
           <button onClick={this.save}>PLACE ORDER</button>
+          <button onClick={this.props.goBack}>Go Back</button>
         </div>
 
         <h2> Order Information </h2>
