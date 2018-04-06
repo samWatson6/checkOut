@@ -33,6 +33,11 @@ class FormTwo extends React.Component {
 
 
   render () {
+    var alert = () => {
+      if (this.state.alert) {
+        return <div id="alert">*Fields marked with an asterisk are required</div>
+      }
+    }
     return (
       <div>
         <label>Name</label> 

@@ -11,6 +11,10 @@ input {
   border-width: 1px;
 }
 
+button {
+  margin-right: 25px;
+}
+
 .forms {
   margin: 15%;
   background-color: #ffffff;
@@ -37,4 +41,9 @@ input {
 
 #backToHomePage{
   margin: 50px;
+}
+
+#alert {
+  color: red;
+  float: right;
 }
