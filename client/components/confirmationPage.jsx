@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class ConfirmationPage extends React.Component {
   constructor(props) {
@@ -7,7 +8,10 @@ class ConfirmationPage extends React.Component {
     };
 
   save() {
-
+    axios.post('/save', this.props.user)
+      .then(function(response){
+      console.log('saved successfully')
+    }); 
     this.props.saveAndContinue();
   }
   
